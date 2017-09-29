@@ -4,7 +4,8 @@
 #include <random>
 #include <thread>
 
-#include <cpen333/process/mutex.h>
+#include "../../library/include/cpen333/process/mutex.h"
+
 
 void run_logger(const std::string& processname,
                 const std::string& filename,

@@ -53,15 +53,49 @@ void wc_tester(const std::string& line, int start_idx, int expected) {
 
 }
 
+void wc_tester(const std::string& line, int start_idx, std::string error_message) {
+	bool correct_result = false;
+	int result = 0;
+
+	try {
+		result = word_count(line, start_idx);
+	}
+	catch (WordCountError & thrown_error) {
+		if (error_message.compare(thrown_error.getMessage()) == 0)
+			correct_result = true;
+	}
+
+	if (!correct_result) {
+		throw UnitTestException(line, start_idx, result, 0);
+	}
+
+}
+
 int main() {
 
+
+	
   try {
 
     // YOUR TESTS HERE
     wc_tester("hello world", 0, 2);
+	wc_tester("hello world", 50, "index out of bounds");
+	wc_tester("   hello weold  %# ", 0, 2);
+	wc_tester("      @#$@%# ", 0, 0);
+	wc_tester("there are 4 words here", 0, 4);
+	wc_tester("there are 4 words here", 5, 3);
+	wc_tester("there are 4 words here", 9, 2);
+	wc_tester("there are 4 words here", 17, 1);
+
+
+	wc_tester("", 0, 0);
 
   } catch(UnitTestException &ute) {
     std::cout << ute.info() << std::endl;
   }
+
+
+  std::cout << "All Unit Tests Passed!!" << std::endl;
+  while (true) {};
 
 }

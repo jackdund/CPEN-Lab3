@@ -11,4 +11,26 @@
  */
 int word_count(const std::string& line, int start_idx);
 
+class WordCountError : public std::exception {
+	std::string message;
+
+public:
+	WordCountError(std::string _message) {
+		message = _message;
+	}
+	const char* what() {
+		return "Error using WordCount";
+	}
+
+	std::string info() {
+		std::string out;
+		out.append(message);
+		return out;
+	}
+
+	std::string getMessage() {
+		return message;
+	}
+
+};
 #endif //LAB3_WORD_COUNT_H

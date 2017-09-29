@@ -1,5 +1,7 @@
-#include <cpen333/process/subprocess.h>
-#include <cpen333/process/mutex.h>
+
+#include "../../library/include/cpen333/process/subprocess.h"
+#include "../../library/include/cpen333/process/mutex.h"
+
 
 int main() {
 

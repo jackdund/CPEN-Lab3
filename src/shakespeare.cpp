@@ -29,9 +29,8 @@
  */
 int is_dialogue_line(const std::string& line, std::string& character) {
 
-  // new character
-  if (line.length() >= 3 && line[0] == ' '
-      && line[1] == ' ' && line[2] != ' ') {
+  // extract character name and save it to the character reference
+  if (line.length() >= 3 && line[0] == ' ' && line[1] == ' ' && line[2] != ' ') {
     // extract character name
 
     int start_idx = 2;
@@ -119,6 +118,16 @@ bool wc_greater_than(std::pair<std::string,int>& p1, std::pair<std::string,int>&
   //===============================================
   // YOUR IMPLEMENTATION HERE TO ORDER p1 AND p2
   //===============================================
+
+	//if p1 speaks more, return true, signifying p1
+	if (p1.second > p2.second)
+		return true;
+
+	//if p1 and p2 speak the same amount, then return true (signifying p1 should come first)
+	// if p1's name comes first in the alphabet
+	if (p1.second == p2.second)
+		if (p1.first > p2.first)
+			return true;
 
   return false;
 };
