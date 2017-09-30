@@ -1,0 +1,10 @@
+﻿  shakespeare.cpp
+c:\users\jackdundas\source\repos\cpen 333\lab3\src\shakespeare.cpp(47): warning C4018: '<=': signed/unsigned mismatch
+c:\users\jackdundas\source\repos\cpen 333\lab3\src\shakespeare.cpp(52): warning C4018: '>=': signed/unsigned mismatch
+c:\users\jackdundas\source\repos\cpen 333\lab3\src\shakespeare.cpp(242): warning C4018: '<': signed/unsigned mismatch
+c:\users\jackdundas\source\repos\cpen 333\lab3\src\shakespeare.cpp(247): warning C4244: 'initializing': conversion from '__int64' to 'long', possible loss of data
+c:\users\jackdundas\source\repos\cpen 333\lab3\src\shakespeare.cpp(253): warning C4018: '<': signed/unsigned mismatch
+c:\users\jackdundas\source\repos\cpen 333\lab3\src\shakespeare.cpp(259): warning C4018: '<': signed/unsigned mismatch
+c:\users\jackdundas\source\repos\cpen 333\lab3\src\shakespeare.cpp(264): warning C4244: 'initializing': conversion from '__int64' to 'long', possible loss of data
+  ShakespeareWordCount.vcxproj -> C:\Users\JackDundas\source\repos\CPEN 333\lab3\Debug\ShakespeareWordCount.exe
+  ShakespeareWordCount.vcxproj -> C:\Users\JackDundas\source\repos\CPEN 333\lab3\Debug\ShakespeareWordCount.pdb (Partial PDB)

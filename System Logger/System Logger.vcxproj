@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{1AFB3C1C-D303-473C-BF3C-788749D19D66}</ProjectGuid>
-    <RootNamespace>ShakespeareWordCount</RootNamespace>
+    <ProjectGuid>{9A95B3E1-DF90-404D-8C72-D20FFF4DEF9F}</ProjectGuid>
+    <RootNamespace>SystemLogger</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -111,53 +111,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\shakespeare.cpp" />
-    <ClCompile Include="..\src\word_count.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\src\word_count.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="data\copyright.txt" />
-    <Text Include="data\shakespeare_alls_well.txt" />
-    <Text Include="data\shakespeare_antony_cleopatra.txt" />
-    <Text Include="data\shakespeare_as_you_like_it.txt" />
-    <Text Include="data\shakespeare_comedy_of_errors.txt" />
-    <Text Include="data\shakespeare_coriolanus.txt" />
-    <Text Include="data\shakespeare_cymbeline.txt" />
-    <Text Include="data\shakespeare_gentlemen_of_verona.txt" />
-    <Text Include="data\shakespeare_hamlet.txt" />
-    <Text Include="data\shakespeare_julius_caesar.txt" />
-    <Text Include="data\shakespeare_king_henry_IV_first.txt" />
-    <Text Include="data\shakespeare_king_henry_IV_second.txt" />
-    <Text Include="data\shakespeare_king_henry_V.txt" />
-    <Text Include="data\shakespeare_king_henry_VIII.txt" />
-    <Text Include="data\shakespeare_king_henry_VI_first.txt" />
-    <Text Include="data\shakespeare_king_henry_VI_second.txt" />
-    <Text Include="data\shakespeare_king_henry_VI_third.txt" />
-    <Text Include="data\shakespeare_king_john.txt" />
-    <Text Include="data\shakespeare_king_lear.txt" />
-    <Text Include="data\shakespeare_king_richard_II.txt" />
-    <Text Include="data\shakespeare_king_richard_III.txt" />
-    <Text Include="data\shakespeare_lovers_complaint.txt" />
-    <Text Include="data\shakespeare_loves_labours_lost.txt" />
-    <Text Include="data\shakespeare_macbeth.txt" />
-    <Text Include="data\shakespeare_measure_for_measure.txt" />
-    <Text Include="data\shakespeare_merchant_of_venice.txt" />
-    <Text Include="data\shakespeare_midsummer_nights_dream.txt" />
-    <Text Include="data\shakespeare_much_ado.txt" />
-    <Text Include="data\shakespeare_othello.txt" />
-    <Text Include="data\shakespeare_romeo_and_juliet.txt" />
-    <Text Include="data\shakespeare_romeo_and_juliet_prologue.txt" />
-    <Text Include="data\shakespeare_sonnets.txt" />
-    <Text Include="data\shakespeare_taming_of_the_shrew.txt" />
-    <Text Include="data\shakespeare_tempest.txt" />
-    <Text Include="data\shakespeare_timon_of_athens.txt" />
-    <Text Include="data\shakespeare_titus_andronicus.txt" />
-    <Text Include="data\shakespeare_troilus_and_cressida.txt" />
-    <Text Include="data\shakespeare_twelfth_night.txt" />
-    <Text Include="data\shakespeare_winters_tale.txt" />
-    <Text Include="data\shakespeare_wives_of_windsor.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
