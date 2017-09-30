@@ -4,7 +4,9 @@
 #include <random>
 #include <thread>
 
-#include "../../library/include/cpen333/process/mutex.h"
+#include<cpen333/process/mutex.h>
+
+
 
 
 void run_logger(const std::string& processname,
@@ -24,12 +26,16 @@ void run_logger(const std::string& processname,
   for (int i=0; i<message_count; ++i) {
     std::this_thread::sleep_for(std::chrono::milliseconds(rnd(eng)));
 
+	while (!mutex.try_lock()) {}
+
     // open file for "append"
     std::ofstream logfile;
     logfile.open(filename, std::ios_base::out | std::ios_base::app);
     logfile << processname << ": " << "message " << i << std::endl;
     std::cout << processname << ": " << "message " << i << std::endl;
     logfile.close();
+
+	mutex.unlock();
 
   }
 

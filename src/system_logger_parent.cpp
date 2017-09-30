@@ -1,6 +1,8 @@
 
-#include "../../library/include/cpen333/process/subprocess.h"
-#include "../../library/include/cpen333/process/mutex.h"
+#include <cpen333/process/subprocess.h>
+#include <cpen333/process/mutex.h>
+
+
 
 
 int main() {
@@ -27,7 +29,11 @@ int main() {
     //=================================================
     cmd.push_back("./system_logger_child");  // relative command path
     // other arguments...
+
+	std::vector<std::string> args = { cmd.back(),"Process #"+i,logfile,std::to_string(nmessages) };
+	processes.push_back(cpen333::process::subprocess(args, true, false));
     // cmd.push_back(...);
+
 
   }
 

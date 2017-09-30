@@ -14,9 +14,10 @@
 	//Verify a small section of dialogue and make sure it adds up. 
 
 //2) Has writing this code multithreaded helped in any way ?
-	//Yes -- 
+	//Yes -- Single execution time was 3483ms while multithreaded was 1644 ms. Speed up of over 2x
 
 // 3) As written, if a character in one play has the same name as a character in another – e.g.King – it will threat them as the same and artificially increase the word count.How can you modify your code to treat them as separate, but still store all characters in the single map(you do not need to implement this… just think about how you would do it) ?
+	//Change the name of the character to attach a the plays name to the character - ie RMJ-Romeo for Romeo and Juliet - "Romeo"
 
 /**
  * Checks if the line specifies a character's dialogue, returning
